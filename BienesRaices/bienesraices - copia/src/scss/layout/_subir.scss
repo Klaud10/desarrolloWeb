@@ -1,0 +1,17 @@
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 0.625rem 0.83333rem;
+    border-radius: .4rem;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }

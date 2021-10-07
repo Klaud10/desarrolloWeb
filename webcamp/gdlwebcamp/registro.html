@@ -1,0 +1,310 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="stylesheet" href="css/main.css" as="style">
+</head>
+
+<body class="conferencia">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+  <header class="site-header" id="top-crf">
+    <div class="hero kenburns-top-left">
+      <div class="contenido-header">
+        <nav class="redes-sociales">
+          <a href="https://facebook.com/"target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/"target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.pinterest.es/"target="_blank"><i class="fab fa-pinterest-p"></i></a>
+          <a href="https://www.youtube.com/"target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/"target="_blank"><i class="fab fa-instagram"></i></a>
+        </nav>
+        <div class="informacion-evento">
+          <div class="clearfix">
+            <p class="fecha"> <i class="fas fa-calendar-alt"></i> 10-12 DIC</p>
+            <p class="ciudad"> <i class="fas fa-map-marker-alt"></i> SC de Tenerife</p>
+          </div>  
+          <h1 class="nombre-sitio">gdlwebcamp</h1>
+          <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
+        </div> <!--informacion-evento-->
+      </div> <!--contenido-header-->
+    </div> <!--Hero-->
+  </header>
+  
+  <div id="barra" class="barra">
+    <div class="contenedor menu-crf"><!--flex-->
+      <div class="logo">
+        <a href="/">
+        <img src="img/logo.svg" alt="logo GdlWebCamp">
+        </a>
+      </div><!--logo-->
+       
+      <div class="menu-movil">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navegacion-principal clearfix">
+        <a href="/index.html">Inicio</a>
+        <a href="/conferencia.html">Conferencias</a>
+        <a href="/contacto.html">Contacto</a>
+        <a href="/404.html">Invitados</a>
+        <a href="/registro.html" class="activo">Reservas</a>
+      </nav>
+
+    </div><!--contenedor menu-crf-->
+  </div><!--barra-->
+
+  <section class="seccion contenedor">
+      <h2>Registro de Usuarios</h2>
+      <form  id="registro" class="registro " action="index.html" method="POST">
+          <div id="datos_usuario" class="registro caja clearfix">
+            <div class="campo ">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            </div>
+            <div class="campo ">
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+            </div>
+            <div class="campo ">
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="correo@correo.com">
+            </div>
+            <div id="error"></div>
+           
+          </div><!--#datos_usuario-->
+          
+          <div id="paquetes" class="paquetes">
+            <h3>Elige el númerpo de boletos</h3>
+            <ul class="lista-precios">
+              <li>
+                <div class="tabla-precio">
+                  <h3>Pase por día (Viernes)</h3>
+                  <p class="numero">30€</p>
+                  <ul>
+                    <li>Free Lunch</li>
+                    <li>Todas las conferencias</li>
+                    <li>Todos los talleres</li>
+                  </ul>
+                  <div class="orden">
+                    <label for="pase_dia">Boletos deseados: </label>
+                    <input type="number" min="0" id="pase_dia" size="3" placeholder="0">
+                  </div>
+                </div>
+              </li>
+              
+              <li>
+                <div class="tabla-precio">
+                  <h3>Todos los días</h3>
+                  <p class="numero">50€</p>
+                  <ul>
+                    <li>Free Lunch</li>
+                    <li>Todas las conferencias</li>
+                    <li>Todos los talleres</li>
+                  </ul>
+                  <div class="orden">
+                    <label for="pase_completo">Boletos deseados: </label>
+                    <input type="number" min="0" id="pase_completo" size="3" placeholder="0">
+                  </div>
+                </div>
+              </li>
+              
+              <li>
+                <div class="tabla-precio">
+                  <h3>Pase por 2 días (Vie y Sáb)</h3>
+                  <p class="numero">45€</p>
+                  <ul>
+                    <li>Free Lunch</li>
+                    <li>Todas las conferencias</li>
+                    <li>Todos los talleres</li>
+                  </ul>
+                  <div class="orden">
+                    <label for="pase_dosdias">Boletos deseados: </label>
+                    <input type="number" min="0" id="pase_dosdias" size="3" placeholder="0">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div><!--#paquetes-->
+          <div id="eventos" class="eventos clearfix">
+            <h3>Elige tus talleres</h3>
+            <div class="caja">
+                  <div id="viernes" class="contenido-dia clearfix">
+                      <h4>Viernes</h4>
+                          <div>
+                              <p>Talleres:</p>
+                              <label><input type="checkbox" name="registro[]" id="taller_01" value="taller_01"><time>10:00</time> Responsive Web Design</label>
+                              <label><input type="checkbox" name="registro[]" id="taller_02" value="taller_02"><time>12:00</time> Flexbox</label>
+                              <label><input type="checkbox" name="registro[]" id="taller_03" value="taller_03"><time>14:00</time> HTML5 y CSS3</label>
+                              <label><input type="checkbox" name="registro[]" id="taller_04" value="taller_04"><time>17:00</time> Drupal</label>
+                              <label><input type="checkbox" name="registro[]" id="taller_05" value="taller_05"><time>19:00</time> WordPress</label>
+                          </div>
+                          <div>
+                              <p>Conferencias:</p>
+                              <label><input type="checkbox" name="registro[]" id="conf_01" value="conf_01"><time>10:00</time> Como ser Freelancer</label>
+                              <label><input type="checkbox" name="registro[]" id="conf_02" value="conf_02"><time>17:00</time> Tecnologías del Futuro</label>
+                              <label><input type="checkbox" name="registro[]" id="conf_03" value="conf_03"><time>19:00</time> Seguridad en la Web</label>
+                          </div>
+                          <div>
+                              <p>Seminarios:</p>
+                              <label><input type="checkbox" name="registro[]" id="sem_01" value="sem_01"><time>10:00</time> Diseño UI y UX para móviles</label>
+                          </div>
+                  </div> <!--#viernes-->
+                  <div id="sabado" class="contenido-dia clearfix">
+                      <h4>Sábado</h4>
+                      <div>
+                            <p>Talleres:</p>
+                            <label><input type="checkbox" name="registro[]" id="taller_06" value="taller_06"><time>10:00</time> AngularJS</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_07" value="taller_07"><time>12:00</time> PHP y MySQL</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_08" value="taller_08"><time>14:00</time> JavaScript Avanzado</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_09" value="taller_09"><time>17:00</time> SEO en Google</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_10" value="taller_10"><time>19:00</time> De Photoshop a HTML5 y CSS3</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_11" value="taller_11"><time>21:00</time> PHP Medio y Avanzado</label>
+                      </div>
+                      <div>
+                            <p>Conferencias:</p>
+                            <label><input type="checkbox" name="registro[]" id="conf_04" value="conf_04"><time>10:00</time> Como crear una tienda online que venda millones en pocos días</label>
+                            <label><input type="checkbox" name="registro[]" id="conf_05" value="conf_05"><time>17:00</time> Los mejores lugares para encontrar trabajo</label>
+                            <label><input type="checkbox" name="registro[]" id="conf_06" value="conf_06"><time>19:00</time> Pasos para crear un negocio rentable</label>
+                      </div>
+                      <div>
+                            <p>Seminarios:</p>
+                            <label><input type="checkbox" name="registro[]" id="sem_02" value="sem_02"><time>10:00</time> Aprende a Programar en una mañana</label>
+                            <label><input type="checkbox" name="registro[]" id="sem_03" value="sem_03"><time>17:00</time> Diseño UI y UX para móviles</label>
+                      </div>
+                  </div> <!--#sabado-->
+                  <div id="domingo" class="contenido-dia clearfix">
+                      <h4>Domingo</h4>
+                      <div>
+                            <p>Talleres:</p>
+                            <label><input type="checkbox" name="registro[]" id="taller_12" value="taller_12"><time>10:00</time> Laravel</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_13" value="taller_13"><time>12:00</time> Crea tu propia API</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_14" value="taller_14"><time>14:00</time> JavaScript y jQuery</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_15" value="taller_15"><time>17:00</time> Creando Plantillas para WordPress</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_16" value="taller_16"><time>19:00</time> Tiendas Virtuales en Magento</label>
+                      </div>
+                      <div>
+                            <p>Conferencias:</p>
+                            <label><input type="checkbox" name="registro[]" id="conf_07" value="conf_07"><time>10:00</time> Como hacer Marketing en línea</label>
+                            <label><input type="checkbox" name="registro[]" id="conf_08" value="conf_08"><time>17:00</time> ¿Con que lenguaje debo empezar?</label>
+                            <label><input type="checkbox" name="registro[]" id="conf_09" value="conf_09"><time>19:00</time> Frameworks y librerias Open Source</label>
+                      </div>
+                      <div>
+                            <p>Seminarios:</p>
+                            <label><input type="checkbox" name="registro[]" id="sem_04" value="sem_04"><time>14:00</time> Creando una App en Android en una tarde</label>
+                            <label><input type="checkbox" name="registro[]" id="sem_05" value="sem_05"><time>17:00</time> Creando una App en iOS en una tarde</label>
+                      </div>
+                  </div> <!--#domingo-->
+              </div><!--.caja-->
+        </div> <!--#eventos-->
+
+        <div id="resumen" class="resumen clearfix">
+          <h3>Pago y  Extras</h3>
+          <div class="caja clearfix">
+            <div class="extras">
+              <div class="orden">
+                <label for="camisa_evento">Camisa del Evento 10€ <small>(promoción 7% dto.)</small></label>
+                <input type="number" min="0" id="camisa_evento" size="3" placeholder="0">
+              </div><!--orden-->
+              <div class="orden">
+                <label for="etiquetas">Paquete de 10 etiquetas 2€ <small>(HTML5, CSS3, JavaScript, Chrome)</small></label>
+                <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
+              </div><!--orden-->
+              <div class="orden">
+                <label for="regalo">Seleccione un regalo</label><br>
+                <select id="regalo" required>
+                  <option value="" class="option" >Seleccione un regalo</option>
+                  <option value="ETI" class="option">Etiquetas</option>
+                  <option value="PUL" class="option">Pulsera</option>
+                  <option value="PLU" class="option">Bolígrafo</option>
+
+                </select>
+              </div><!--orden-->
+              <input type="button" id="calcular" class="button" value="Calcular">
+            </div><!--extras-->
+            <div class="total">
+              <p>Resumen:</p>
+              <div id="listaProductos">
+
+              </div>
+              <p>Total:</p>
+              <div id="suma-total">
+
+              </div>
+              <input id="btnRegistro" type="submit" class="button" value="Pagar">
+            </div><!--total-->
+          </div><!--caja-->
+        </div><!--resumen-->
+
+      </form>
+  </section>
+  
+  <footer class="piepagina-crf">
+    <div class="contenedor">
+      <ul class="pie-crf">
+        <li>
+          <h3>Sobre <span>GdlWebCamp</span></h3>
+          <p>Pellentesque ac gravida nunc, eget rutrum libero. Duis eget quam molestie, euismod odio vitae, posuere sapien. Nullam sed malesuada nibh, in porttitor elit. Suspendisse potenti. Cras pharetra placerat lacus at elementum. Phasellus eget ligula molestie, pretium magna ut, accumsan elit. Morbi ut</p>
+        </li>
+        <li> 
+          <h3>Últimos <span>Tweets</span></h3>
+          <a class="twitter-timeline" data-height="400" href="https://twitter.com/KlawsTf?ref_src=twsrc%5Etfw">Tweets by KlawsTf</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </li>
+        <li>
+          <h3>Redes <span>Sociales</span></h3>
+          <p class="redes-sociales">
+            <a href="https://facebook.com/"target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.pinterest.es/"target="_blank"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.youtube.com/"target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/"target="_blank"><i class="fab fa-instagram"></i></a>
+          </p>
+        </li>
+      </ul>      
+    </div>
+    <div class="copyryght">
+      <p>Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Boton Subir -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up"></i></button>
+  <script src="boton-subir.js" type="text/javascript"></script>
+  <!-- Boton Subir -->
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

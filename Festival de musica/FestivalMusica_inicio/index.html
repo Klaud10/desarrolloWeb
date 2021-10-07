@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <meta name="description" content="Pagina de pruebas para practicar gulp y sass">
+    <link rel="preload" href="build\css\app.css" as="style">
+    <link rel="stylesheet" href="build\css\app.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1> Rock & EDM Festival </h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Horarios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Entradas</a>
+            </nav>
+        </div>
+    </header>
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>
+                    Rock & EDM Festival
+                    <span>Julio 2021, SC de Tenerife</span>
+                </h2>
+            </div><!-- .contenedor -->
+        </div><!-- .overlay -->
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">         
+        </video>
+    </div> <!-- .video -->
+    
+    <section class="sobre-festival contenedor">
+        <picture class="imagen">
+            <img src="build/img/imagen_vocalista.jpg" loading="lazy" alt="Imagen de vocalista con guitarra">
+        </picture>
+        <div class="contenido-festival">
+            <h2> Rock & EDM Festival</h2>
+            <p class="fecha">Julio 2021, SC de Tenerife</p>
+            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl ante, commodo vitae tempor sit amet, tincidunt in justo. Mauris gravida imperdiet libero ac varius. Praesent dictum sagittis lectus a.</p>    
+        </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+        <h3>Horarios</h3>
+
+        <p class="dia">Viernes 21</p>
+        <div class="escenario-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario ROCK</p>
+                <ul class="calendario">
+                    <li>24.00 Hs | <span>Red Hot Chili Peppers</span></li>
+                    <li>22.00 Hs | <span>Pearl Jam</span></li>
+                    <li>20.00 Hs | <span>Bon Jovi</span></li>
+                    <li>19.00 Hs | <span>Aerosmith</span></li>
+                    <li>18.00 Hs | <span>Sting</span></li>
+                    <li>17.00 Hs | <span>Elton John</span></li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>   
+                <ul class="calendario">
+                    <li>24.00 Hs | <span>Deadmau5</span></li>
+                    <li>22.00 Hs | <span>Tiesto</span></li>
+                    <li>20.00 Hs | <span>Hardwell</span></li>
+                    <li>19.00 Hs | <span>Dash Berlin</span></li>
+                    <li>18.00 Hs | <span>Fede Legrand</span></li>
+                    <li>17.00 Hs | <span>Audien</span></li>
+                </ul> 
+            </div>
+        
+        </div>
+        <p class="dia">Sabado 22</p>
+        <div class="escenario-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario ROCK</p>
+                <ul class="calendario">
+                    <li>24.00 Hs | <span>Pink Floyd</span></li>
+                    <li>22.00 Hs | <span>Metálica</span></li>
+                    <li>20.00 Hs | <span>AC/DC</span></li>
+                    <li>19.00 Hs | <span>Guns´N Roses</span></li>
+                    <li>18.00 Hs | <span>Queen</span></li>
+                    <li>17.00 Hs | <span>Eric Clapton</span></li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>   
+                <ul class="calendario">
+                    <li>24.00 Hs | <span>Deadmau5</span></li>
+                    <li>22.00 Hs | <span>Tiesto</span></li>
+                    <li>20.00 Hs | <span>Hardwell</span></li>
+                    <li>19.00 Hs | <span>Dash Berlin</span></li>
+                    <li>18.00 Hs | <span>Fede Legrand</span></li>
+                    <li>17.00 Hs | <span>Audien</span></li>
+                </ul> 
+            </div>
+        </div>
+    </section>
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Entradas</h3>
+        <div class="contenedor-boletos contenedor">
+            <div class="basico plan">
+                <p>Pase 1 Día</p>
+                <h3 class="pase">Incluye</h3>
+
+                <ul class="lista">
+                    <li>Acceso a todos los escenarios</li>
+                    <li>Comida y bebida</li>
+                    <li>Camisa del evento</li>
+                    <li>Acceso preferente</li>
+                    <li>€ 100</li>
+                </ul>
+
+            </div>
+            
+            <div class="premium plan">
+                
+                <p>Pase 2 Días</p>
+                <h3 class="pase">Incluye</h3>
+                <ul class="lista">
+                    <li>Acceso a todos los escenarios</li>
+                    <li>Comida y bebida</li>
+                    <li>Camisa del evento</li>
+                    <li>Acceso VIP</li>
+                    <li>€ 180</li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Rock & EDM Festival. Todos los derechos reservados.</p>
+        <p>By Claudio Falabella &#174;</p>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-up" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="7 11 12 6 17 11" />
+            <polyline points="7 17 12 12 17 17" />
+        </svg>
+    </button>
+    <script src="build\js\bundle.js"></script>
+</body>
+</html>

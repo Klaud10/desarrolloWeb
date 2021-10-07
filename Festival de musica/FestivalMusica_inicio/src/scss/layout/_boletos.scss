@@ -1,0 +1,55 @@
+.boletos{
+    padding: $separacion 0;
+    h3{
+        text-align: center;
+        color: $blanco;
+    }
+    .contenedor-boletos{
+        @include grid(1, $separacion );
+    }
+    .contenedor-boletos{
+        @include tablet{
+            margin-top: $separacion / 2;
+            @include grid(2, $separacion);
+        }
+    }
+    .plan{
+        p{
+            color: $blanco;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+.pase{
+    width: 100%;
+    border-spacing: 0;
+    background-color: $rosa;
+    padding: $separacion / 3;
+    color: $blanco;
+    font-size: 2.5rem;
+    font-weight: $delgada;
+}    
+    
+    .lista{
+        
+        background-color: $blanco;
+        padding: $separacion / 4 0 0 0;
+        margin: 0;
+        
+        li{
+            padding: $separacion / 5;
+            font-size: 1.7rem;
+            font-weight: $regular;
+            &:last-child{
+                padding: $separacion / 3;
+                margin-top: $separacion /2;
+                text-align: center;
+                color: $blanco;
+                font-size: 2.5rem;
+                background-color: $morado;
+            }
+        }
+    }
+    

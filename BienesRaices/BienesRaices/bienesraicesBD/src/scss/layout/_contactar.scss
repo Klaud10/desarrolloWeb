@@ -1,0 +1,32 @@
+.no-webp .imagen-contacto{
+    background-image: url(../img/encuentra.jpg);
+}
+.webp .imagen-contacto{
+    background-image: url(../img/encuentra.webp);
+}
+.imagen-contacto{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed; /* Crea el efecto parallax */
+    padding: $separacion *6 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2, p {
+        color: $blanco;
+        margin: 1rem;
+    }
+    h2 {
+        font-size: 4rem;
+        font-weight: $black;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+}

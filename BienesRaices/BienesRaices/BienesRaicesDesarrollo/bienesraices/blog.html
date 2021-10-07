@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de practica sobre bienes raices">
+    <title>Bienes raices</title>
+    <link rel="icon" href="build/img/favicon1.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="build/img/logo.svg" alt="Logo de Bienes Raices">
+                </a>
+                <div class="mobile-menu">
+                    <img src="build/img/barras.svg" alt="icono del menu hamburguesa">
+                </div>
+                <div class="derecha">
+                    
+                    <img class="luna-crf dark-mode-boton" src="build/img/dark-mode.svg" alt="Boton para modo nocturno">
+                    <!-- <img class="sol-crf dark-mode-boton" src="build/img/sun.svg" alt="Boton para modo diurno"> -->
+    
+                    <nav class="navegacion">
+                        <a class="cool-crf" href="/">Inicio</a>
+                        <a class="cool-crf" href="anuncios.html">Anuncios</a>
+                        <a class="cool-crf" href="nosotros.html">Nosotros</a>
+                        <a class="cool-crf" href="blog.html">Nuestro Blog</a>
+                        <a class="cool-crf" href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div> <!--Cierra la barra-->
+            
+        </div>
+    </header>
+    <main class="contenedor seccion contenido-centrado">
+        <h1>Nuestro Blog</h1>
+        <article class="entrada-blog">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/blog1.webp" type="image/webp">
+                    <source srcset="build/img/blog1.jpg" type="image/jepg">
+                    <a href="entrada.html"><img loading="lazy" src="build/img/blog1.jpg" alt="Imagen de terraza cubierta"></a>    
+                </picture>
+            </div>
+            <div class="texto-entrada">
+                <a href="entrada.html"><h4>Terraza en el techo de tu casa</h4></a>
+                <p>Escrito el: <span>10/03/2021</span> por: <span>Administrador</span></p>
+                <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero.</p>
+            </div>
+        </article>
+        <article class="entrada-blog">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/blog2.webp" type="image/webp">
+                    <source srcset="build/img/blog2.jpg" type="image/jepg">
+                    <a href="entrada.html"><img loading="lazy" src="build/img/blog2.jpg" alt="Imagen de terraza cubierta"></a>    
+                </picture>
+            </div>
+            <div class="texto-entrada">
+                <a href="entrada.html"><h4>Guia para el cuidado de tu piscina</h4></a>
+                <p>Escrito el: <span>08/03/2021</span> por: <span>Administrador</span></p>
+                <p>Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio</p>
+            </div>
+        </article>
+        <article class="entrada-blog">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/blog3.webp" type="image/webp">
+                    <source srcset="build/img/blog3.jpg" type="image/jepg">
+                    <a href="entrada.html"><img loading="lazy" src="build/img/blog3.jpg" alt="Imagen de terraza cubierta"></a>    
+                </picture>
+            </div>
+            <div class="texto-entrada">
+                <a href="entrada.html"><h4>Consejos para ahorrar en calefacción</h4></a>
+                <p>Escrito el: <span>10/03/2021</span> por: <span>Administrador</span></p>
+                <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero.</p>
+            </div>
+        </article>
+        <article class="entrada-blog">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/blog4.webp" type="image/webp">
+                    <source srcset="build/img/blog4.jpg" type="image/jepg">
+                    <a href="entrada.html"><img loading="lazy" src="build/img/blog4.jpg" alt="Imagen de terraza cubierta"></a>    
+                </picture>
+            </div>
+            <div class="texto-entrada">
+                <a href="entrada.html"><h4>Guia para la decoración de tu hogar</h4></a>
+                <p>Escrito el: <span>08/03/2021</span> por: <span>Administrador</span></p>
+                <p>Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio</p>
+            </div>
+        </article>
+    </main>
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a class="cool-crf" href="/">Inicio</a>
+                <a class="cool-crf" href="anuncios.html">Anuncios</a>
+                <a class="cool-crf" href="nosotros.html">Nosotros</a>
+                <a class="cool-crf" href="blog.html">Nuestro Blog</a>
+                <a class="cool-crf" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <p class="copyright">Todos los derechos reservados &copy;</p>
+    </footer>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <!--Boton subir-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-up" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="7 11 12 6 17 11" />
+            <polyline points="7 17 12 12 17 17" />
+        </svg>
+    </button>
+    
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
